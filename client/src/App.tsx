@@ -8,7 +8,7 @@ function App() {
   return (
     <HelmetProvider>
       <Routes>
-        <Route path="/" element={<DefaultLayout />}>
+        <Route path="/cardProduct" element={<DefaultLayout />}>
           <Route index element={<MainPage />} />
           <Route path="*" element={<NotFound404Page />} />
         </Route>
