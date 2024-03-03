@@ -1,0 +1,45 @@
+@use "../media.scss" as *;
+.mailing{
+	color: var(--color5);
+	background-color: var(--color4);
+	background-image: url("./images/wave.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	&__inner{
+		padding: 25px 0;
+		display: flex;
+		align-items: center;
+		@include max1111{
+			flex-wrap: wrap;
+			gap: 21px;
+		}
+	}
+	&__title{
+		font-size: 32px;
+		white-space: nowrap;
+		margin-right: 97px;
+		@include max1111{
+			font-size: 24px;
+		}
+	}
+	&__button{
+		padding: 15px 61px !important;
+	}
+	.myCheckbox{
+		color: var(--color7);
+		width: 100%;
+		font-size: 12px;
+		margin-top: 18px;
+	}
+	&__body{
+		display: flex;
+		flex-wrap: wrap;
+		div{
+			@include max1111{
+				flex-wrap: wrap;
+				gap: 21px !important;	
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+@use "../media.scss" as *;
+.productCard{
+	&__inner{
+		display: flex;
+		gap: 73px;
+	}
+	&__body{
+	flex-grow: 1;
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 32px;
+		margin-bottom: 32px;
+		@include max479{
+			font-size: 24px;
+		}
+	}
+	&__info{
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 50px;
+		@include max959{
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__right{
+		font-weight: 500;
+		margin-left: 30px;
+		@include max959{
+			margin-left: 0;
+			margin-top: 21px;
+		}
+		div + div{
+			color: var(--color1);
+			margin-top: 15px;
+			span{
+				color: var(--color3);
+			}
+		}
+	}
+	&__price{
+		display: flex;
+		align-items: flex-end;
+		margin-top: 45px !important;
+		margin-bottom: 45px;
+		.new{
+			font-size: 18px;
+			font-weight: 600;
+			margin-right: 20px;
+			@include max400{
+				font-size: 16px;
+			}
+		}
+		.old{
+			color: var(--color12);
+			display: flex;
+			flex-direction: column;
+			.discount{
+				margin: 0 auto;
+				margin-bottom: 9px;
+				background-color: var(--color13);
+				text-align: center;
+				padding: 3px;
+				width: max-content;
+			}
+		}
+	}
+	.counter{
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		font-size: 16px;
+		margin-left: 46px;
+		@include max479{
+			order: -1;
+			margin-left: 0;
+			margin-right: 25px;
+		}
+		button{
+			font-weight: 800;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 4px;
+			width: 20px;
+			height: 20px;
+			background-color: var(--color11);
+		}
+	}
+	&__buttons{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		@include max400{
+			gap: 20px;
+			font-size: 13px;
+		}
+	}
+}

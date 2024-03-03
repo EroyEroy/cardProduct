@@ -1,0 +1,41 @@
+@use "../media.scss" as *;
+.footer{
+	&__inner{
+		padding: 95px 0 75px 0;
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+		@include max959{
+			flex-direction: column;
+			padding: 50px 0 28px 0;
+		}
+	}
+	&__social{
+		display: inline-flex;
+		align-items: center;
+		gap: 37px;
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@include max959{
+			align-items: center;
+		}
+	}
+	&__address{
+		font-size: 12px;
+		color: var(--color1);
+	}
+	&__phone{
+		display: inline-flex;
+		align-items: center;
+		font-weight: 500;
+		img{
+			margin-right: 5px;
+		}
+	}
+	&__copy{
+		font-size: 12px;
+	}
+}
